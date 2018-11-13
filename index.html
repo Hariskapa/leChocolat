@@ -22,7 +22,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a>
                     </li>
@@ -37,9 +37,61 @@
                             Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                        <a data-toggle="modal" data-target="#loginModal">
+                           <span class="fa fa-sign-in"></span> Login
+                         </a>
+                       </span>
             </div>
         </div>
     </nav>
+
+<!--Modal content-->
+    <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login </h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputEmail3">Email 
+                                    address
+                                </label>
+                                <input type="email" class="form-control form-control-sm mr-1" 
+                                    id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="exampleInputPassword3">
+                                    Password
+                                </label>
+                                <input type="password" class="form-control form-control-sm mr-1" 
+                                    id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> 
+                                      Remember me
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default btn-sm" 
+                            data-dismiss="modal">Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary btn-sm">
+                            Sign in
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
     <!--header-->
     <header class="jumbotron">
         <div class="container">
@@ -54,7 +106,10 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col col-sm-3">
-                    <a class="btn btn-sm btn-warning" href="#bskt">Reserve your baskets</a>
+                    <a class="btn btn-sm btn-warning" 
+                    data-toggle="tooltip" data-html="true" 
+                    title="Or Call us at <br><strong>+ 987 6543 2100</strong>"
+                    data-placement="bottom" href="#bskt">Reserve your baskets</a>
                 </div>
 
 
@@ -62,6 +117,7 @@
         </div>
     </header>
 
+<!--Main content-->
     <div class="container">
         <!--  <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -271,6 +327,11 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+            $(function () {
+               $('[data-toggle="tooltip"]').tooltip()
+             })
+           </script>
 
 </body>
 
