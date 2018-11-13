@@ -144,48 +144,77 @@
             </div>
         </div>
         <!--4th-->
-        <div class="row">
-            <div class="col justify-content-center">
-                <div class="card">
-                    <div class="card-header bg.warning">Reserve your baskets</div>
+        <div class="row justify-content-center">
+            <div class="col col-sm-8 col-12 ">
+                <div class="card mb-3">
+                    <div class="card-header bg-warning">Reserve your baskets</div>
                     <div class="card-body">
-                        <form id="bskt" action="">
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">1
-                                </label>
+                        <form action="">
+                            <div class="form-group row">
+                                <div class="col-sm-3">
+                                    <label for="radiobtn">Number of baskets</label>
+                                </div>
+
+                                <div class="col-sm-9">
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">1
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">2
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline ">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">3
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">4
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">5
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline ">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">6
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">2
-                                </label>
+                            <div class="form-group row">
+                                <p class="col-sm-3">Date and Time</p>
+                                <div class="input-group col-sm-4">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="date" class="form-control" placeholder="Date" id="date" name="date">
+                                </div>
+
+                                <div class="input-group col-sm-4">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                    </div>
+                                    <input type="time" class="form-control" placeholder="Time" id="time" name="time">
+
+                                </div>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">3
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">4
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">5
-                                </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="optradio">6
-                                </label>
+                            <div class="form-group row">
+                                <input type="submit" class="btn btn-primary" value="Reserve">
                             </div>
                         </form>
                     </div>
                 </div>
-
             </div>
         </div>
+
+
     </div>
 
     <!--Footer-->
